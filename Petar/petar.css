@@ -1,0 +1,261 @@
+/* CSS файла на Петър Кавръков */
+
+.pages {
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    gap: 1rem;
+}
+.logo{
+    display : flex;
+    background-color: #ffffff;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.footer {
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 38rem;
+    right: 1rem;
+    gap: 1rem;
+}
+
+.contacts {
+    display : flex;
+    background-color: #ffffff;
+    position: absolute;
+    top: 36.5rem;
+    left: 1rem;
+    gap: 1rem;
+    
+}
+.container{
+  width: 100%;
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 10%;
+}
+button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.discord{
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 36rem;
+    right: 66rem;
+    gap: 1rem;
+}
+.learn-more-btn {
+    display: inline-block;
+    padding: 0.75rem;         
+    font-size: 1.5rem;               
+    font-family: sans-serif;
+    color: black;
+    background-color: white;
+    border: 0.125rem solid black; 
+}
+
+.motherboardimg {
+  width: 100%;
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  padding-top: 7%;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 5%;
+}
+.discord2{
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 50.5rem;
+    right: 66rem;
+    gap: 1rem;
+}
+
+.contacts2 {
+    display : flex;
+    background-color: #ffffff;
+    position: absolute;
+    top: 51rem;
+    left: 1rem;
+    gap: 1rem;
+    
+}
+.footer2 {
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 54rem;
+    right: 1rem;
+    gap: 1rem;
+}
+
+.CPUSocket{
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 12rem;
+    left: 37.5rem;
+    gap: 1rem;
+    text-decoration: underline;
+}
+
+.DIMMSlots{
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 24.3rem;
+    right: 18.3rem;
+    gap: 1rem;
+    text-decoration: underline;
+}
+.PinATXPowerConnector{
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 43rem;
+    right: 21rem;
+    gap: 1rem;
+    text-decoration: underline;
+}
+.SSDSlots{
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 44rem;
+    right: 35rem;
+    gap: 1rem;
+    text-decoration: underline;
+}
+.CMOS{  
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 43rem;
+    left: 29rem;
+    gap: 1rem;
+    text-decoration: underline;
+}
+.ExpansionSlots{
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 34.5rem;
+    left: 17rem;
+    gap: 1rem;
+    text-decoration: underline;
+}
+
+.IOports{
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 23rem;
+    left: 19rem;
+    gap: 1rem;
+    text-decoration: underline;
+}
+
+.CPUConnector{
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 15rem;
+    left: 13rem;
+    gap: 1rem;
+    text-decoration: underline;
+}
+.PrivacyPolicy2{
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 51rem;
+    right: 1rem;
+    gap: 1rem;
+}
+
+.PrivacyPolicy{
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 36rem;
+    right: 1rem;
+    gap: 1rem;
+}
+.privacy-policy {
+    display: flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding-top: 7%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+ }
+
+.tooltip .tooltip-text {
+    display: none;
+     position: absolute;
+    background: #eee;
+    border: 1px solid #aaa;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    width: 200px;
+}
+
+.tooltip:hover .tooltip-text {
+    display: block;
+}
+
+.tooltip-text button {
+    margin-top: 10px;
+}
+.learn-more-btn2 {
+    display: inline-block;     
+    font-size: 1rem;               
+    font-family: sans-serif;
+    color: black;
+    background-color: white;
+    border: 0.125rem solid black; 
+}
+
+body {
+    background-color: #ffffffff; 
+}
+/*  #e7fc89ed;*/
