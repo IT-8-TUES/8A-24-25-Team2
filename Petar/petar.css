@@ -1,4 +1,8 @@
 /* CSS файла на Петър Кавръков */
+html, body {
+    max-width: 100%;
+    
+}
 
 .pages {
     display : flex;
@@ -30,13 +34,13 @@
     display : flex;
     background-color: #ffffff;
     position: absolute;
-    top: 36.5rem;
+    top: 37.5rem;
     left: 1rem;
     gap: 1rem;
     
 }
 .container{
-  width: 100%;
+  
   background-blend-mode: darken;
   background-position: center;
   background-size: cover;
@@ -57,7 +61,7 @@ button-container{
     background-color: #ffffff;
     font-family: Arial, sans-serif;
     position: absolute;
-    top: 36rem;
+    top: 37rem;
     right: 66rem;
     gap: 1rem;
 }
@@ -72,14 +76,11 @@ button-container{
 }
 
 .motherboardimg {
-  width: 100%;
-  background-blend-mode: darken;
-  background-position: center;
-  background-size: cover;
-  padding-top: 7%;
-  padding-left: 30%;
-  padding-right: 30%;
-  padding-bottom: 5%;
+    display: flex;
+  margin-top: 7%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 5%;
 }
 .discord2{
     display : flex;
@@ -87,7 +88,7 @@ button-container{
     font-family: Arial, sans-serif;
     position: absolute;
     top: 50.5rem;
-    right: 66rem;
+    left: 10rem;
     gap: 1rem;
 }
 
