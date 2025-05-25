@@ -1,6 +1,20 @@
 /* CSS файла на Петър Кавръков */
+div {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 100;
+}
+header, footer {
+  background-color: #8ed6e6;
+}
+
 html, body {
     max-width: 100%;
+    
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     
 }
 
@@ -9,49 +23,124 @@ html, body {
     background-color: #ffffff;
     font-family: Arial, sans-serif;
     position: absolute;
-    top: 2rem;
+    top: 2.5rem;
     right: 1.5rem;
     gap: 1rem;
+    
 }
-.logo{
-    display : flex;
-    background-color: #ffffff;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
+.pages a:hover{
+    color: #5410a1;
+    text-decoration: underline;
 }
-.footer {
+
+.btn{
     display : flex;
+    border-bottom: #000000 solid 0.1rem;
+    border-top: #000000 solid 0.1rem;
+    border-left:#000000 solid 0.1rem;
+    border-right:#000000 solid 0.1rem;
     background-color: #ffffff;
     font-family: Arial, sans-serif;
-    position: absolute;
-    top: 38rem;
-    right: 1rem;
     gap: 1rem;
+}
+.pages a{
+    display : flex;
+    text-decoration:none;
+    color: #000000;
+    
+}
+.zag a{
+    display : flex;
+    text-decoration:none;
+    color: #000000;
+    
+}
+.zag a:hover{
+    color: #5410a1;
+    text-decoration: underline;
+}
+.cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid #ffffff;
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* CSS за JS-a на боби */
+.carousel {
+    margin-top: 10rem;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    
+    width: 25rem;
+    height: 18rem;
+    margin: 0.625rem;
+}
+.carousel-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    filter: brightness(0.9);
+}
+/* край на CSS за JS-a на боби */
+.footer {
+    position: absolute;
+  top: 88rem;
+  right: 0;
+  padding: 1rem;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  background-color: transparent; 
+}
+
+.footer p {
+  margin: 0.5rem 0;
 }
 
 .contacts {
     display : flex;
     background-color: #ffffff;
     position: absolute;
-    top: 37.5rem;
+    top: 88.5rem;
     left: 1rem;
     gap: 1rem;
     
 }
-.container{
-  
+.PrivacyPolicy{
+    display : flex;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 86rem;
+    right: 1rem;
+    gap: 1rem;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+}
+.container {
   background-blend-mode: darken;
   background-position: center;
   background-size: cover;
-  padding-top: 10%;
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-bottom: 10%;
+  padding-top: 10vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-bottom: 10vw;
 }
-button-container{
+.button-container{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   margin-top: 1rem;
 }
@@ -61,7 +150,7 @@ button-container{
     background-color: #ffffff;
     font-family: Arial, sans-serif;
     position: absolute;
-    top: 37rem;
+    top: 88rem;
     right: 66rem;
     gap: 1rem;
 }
@@ -72,23 +161,32 @@ button-container{
     font-family: sans-serif;
     color: black;
     background-color: white;
+    border: 0.125rem solid black;
+    transition:background-color 0.15s, color 0.15s, border 0.15s;
+    border-radius:0.4rem; 
+    text-decoration: none;
+}
+.learn-more-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
     border: 0.125rem solid black; 
+    
 }
 
 .motherboardimg {
-    display: flex;
-  margin-top: 7%;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-bottom: 5%;
+  display: flex;
+  margin-top: 7vw;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  margin-bottom: 5vw;
 }
 .discord2{
     display : flex;
     background-color: #ffffff;
     font-family: Arial, sans-serif;
     position: absolute;
-    top: 50.5rem;
-    left: 10rem;
+    top: 51.5rem;
+    left: 8.5rem;
     gap: 1rem;
 }
 
@@ -96,30 +194,34 @@ button-container{
     display : flex;
     background-color: #ffffff;
     position: absolute;
-    top: 51rem;
+    top: 52rem;
     left: 1rem;
     gap: 1rem;
     
 }
 .footer2 {
-    display : flex;
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
-    position: absolute;
-    top: 54rem;
-    right: 1rem;
-    gap: 1rem;
+  position: absolute;
+  top: 52.5rem;
+  right: 0;
+  padding: 1rem;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  background-color: transparent; 
+}
+
+.footer2 p {
+  margin: 0.5rem 0;
 }
 
 .CPUSocket{
     display : flex;
     background-color: #ffffff;
-    font-family: Arial, sans-serif;
     position: absolute;
     top: 12rem;
-    left: 37.5rem;
+    left: 41.8rem;
     gap: 1rem;
     text-decoration: underline;
+    
 }
 
 .DIMMSlots{
@@ -127,8 +229,8 @@ button-container{
     background-color: #ffffff;
     font-family: Arial, sans-serif;
     position: absolute;
-    top: 24.3rem;
-    right: 18.3rem;
+    top: 24rem;
+    right: 21.3rem;
     gap: 1rem;
     text-decoration: underline;
 }
@@ -138,7 +240,7 @@ button-container{
     font-family: Arial, sans-serif;
     position: absolute;
     top: 43rem;
-    right: 21rem;
+    right: 23rem;
     gap: 1rem;
     text-decoration: underline;
 }
@@ -148,7 +250,7 @@ button-container{
     font-family: Arial, sans-serif;
     position: absolute;
     top: 44rem;
-    right: 35rem;
+    right: 39rem;
     gap: 1rem;
     text-decoration: underline;
 }
@@ -158,7 +260,7 @@ button-container{
     font-family: Arial, sans-serif;
     position: absolute;
     top: 43rem;
-    left: 29rem;
+    left: 30rem;
     gap: 1rem;
     text-decoration: underline;
 }
@@ -167,8 +269,8 @@ button-container{
     background-color: #ffffff;
     font-family: Arial, sans-serif;
     position: absolute;
-    top: 34.5rem;
-    left: 17rem;
+    top: 34rem;
+    left: 20.4rem;
     gap: 1rem;
     text-decoration: underline;
 }
@@ -178,8 +280,8 @@ button-container{
     background-color: #ffffff;
     font-family: Arial, sans-serif;
     position: absolute;
-    top: 23rem;
-    left: 19rem;
+    top: 22.5rem;
+    left: 22.7rem;
     gap: 1rem;
     text-decoration: underline;
 }
@@ -189,8 +291,8 @@ button-container{
     background-color: #ffffff;
     font-family: Arial, sans-serif;
     position: absolute;
-    top: 15rem;
-    left: 13rem;
+    top: 14.8rem;
+    left: 16.5rem;
     gap: 1rem;
     text-decoration: underline;
 }
@@ -204,48 +306,43 @@ button-container{
     gap: 1rem;
 }
 
-.PrivacyPolicy{
-    display : flex;
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
-    position: absolute;
-    top: 36rem;
-    right: 1rem;
-    gap: 1rem;
-}
+
 .privacy-policy {
     display: flex;
     background-color: #ffffff;
     font-family: Arial, sans-serif;
-    padding-top: 7%;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 5%;
+    padding-top: 4.375rem;
+    padding-left: 12.5rem;
+    padding-right: 12.5rem;
+    padding-bottom: 3.125rem;
 }
-
 .tooltip {
     position: relative;
     display: inline-block;
+    color:black;
  }
 
 .tooltip .tooltip-text {
     display: none;
      position: absolute;
-    background: #eee;
+    background: #ffffff;
     border: 1px solid #aaa;
     padding: 10px;
     border-radius: 5px;
     top: 100%;
     left: 0;
     width: 200px;
+    color:black;
 }
 
 .tooltip:hover .tooltip-text {
     display: block;
+    color:black;
 }
 
 .tooltip-text button {
-    margin-top: 10px;
+    margin-top: 0.625rem; 
+    color:black;
 }
 .learn-more-btn2 {
     display: inline-block;     
@@ -256,7 +353,69 @@ button-container{
     border: 0.125rem solid black; 
 }
 
-body {
-    background-color: #ffffffff; 
-}
 /*  #e7fc89ed;*/
+.container_img {
+  position: relative;   
+  top: 10rem;
+  left: 10rem;         
+  width: 31.25rem;        
+  height: 31.25rem;
+}
+
+.container img {
+  width: 20rem;
+  height: 15rem;
+  object-fit: contain;
+}
+.main-content {
+  display: flex;
+  align-items: center; 
+  gap: 2rem; 
+  padding: 2rem; 
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.image-wrapper img {
+  width: 25rem;  
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.8rem; 
+}
+.image-wrapper2 img {
+  width: 28rem;  
+  height: 20rem;
+  object-fit: contain;
+  border-radius: 0.8rem; 
+}
+
+.button-left {
+  position: fixed;
+  top: 5rem;
+  left: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 10rem;
+}
+
+.button-left:hover {
+  background-color: #e0e0e0;
+}
+
+.text-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: #000;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
