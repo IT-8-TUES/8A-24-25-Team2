@@ -171,6 +171,10 @@ body {
     margin-top: 0;
 }
 
+.spacer{
+    margin-top: 3rem;
+}
+
 .other{
     font-size: 1.4rem;
 }
