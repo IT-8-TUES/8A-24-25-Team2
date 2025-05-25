@@ -143,6 +143,7 @@ body {
 }
 /* край на CSS за JS-a на боби */
 .foot{
+    border-top: 1px solid white;
     display: flex;
     background: black;
     max-width: 100%;
