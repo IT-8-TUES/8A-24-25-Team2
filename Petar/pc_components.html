@@ -4,14 +4,37 @@
     <link href="./petar.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
+
+    
+
+        <style>
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: red;
+}</style>
  </head>
  <body>
   <header>      
-   
+            <div class="zag">
+            <a href="homepage.html">
             <h1>CCH - Computer Circuit Helper</h1>
-        <h3>Тук можете да намерите информация за лаптопи и компютри.</h3>
-       
-        <hr>
+            </a>
+
+          </div>
         
  
     <div class="pages">
@@ -20,21 +43,27 @@
             <a href=" ">Периферия</a>
             
       </div>
+      
   </header>
 
   <main>
+<hr>
+    <!-- <div class="cursor typewriter-animation">
+            <h1>Части на ком</h1>
+        </div> -->
+
    <div class="motherboardimg">
-        <img src =".\Motherboard.png"
+        <img src ="pics\Motherboard.png"
         width="100%" height="500rem"/>
    </div> 
    <div class="CPUSocket">
-    <div class="tooltip">
-      CPU Socket
-      <div class="tooltip-text">
-        Това е мястото, където се поставя процесорът, мозъкът на компютъра.<br>
-        <a href="pc_components.html" class="learn-more-btn2">Виж повече</a>
-      </div>
-    </div>
+  <div class="tooltip">
+    CPU Socket
+    <div class="tooltip-text">
+      Това е мястото, където се поставя процесорът, мозъкът на компютъра.<br>
+       <a href="pc_components.html" class="learn-more-btn2">Виж повече</a>
+  </div>
+  </div>
   </div>
       
       <div class="DIMMSlots"><div class="tooltip">
@@ -42,7 +71,7 @@
     <div class="tooltip-text">
       Слотове за RAM памет.  
       Използват се за инсталиране на RAM памет, която помага на компютъра да работи по-бързо.<br>
-       <a href="pc_components.html" class="learn-more-btn2">Виж повече</a>
+       <a href="RAM.html" class="learn-more-btn2">Виж повече</a>
     </div>
     </div>
     </div>
@@ -53,7 +82,7 @@
   <div class="tooltip-text">
     Основният съединител за захранване на дънната платка.  
     Осигурява електрическа енергия за всички ключови компоненти.
-    <a href="pc_components.html" class="learn-more-btn2">Виж повече</a>
+    
     </div>
     </div>
     </div>
@@ -62,7 +91,7 @@
         <div class="tooltip">
   <div class="tooltip-trigger">M.2 SSD слотове</div>
   <div class="tooltip-text">
-    Слотове за високоскоростни M.2 твърдотелни устройства (SSD).<br>
+    Слотове за високоскоростни M.2 твърдотелни устройства (SSD).
     Позволяват по-бърз трансфер на данни и по-компактно решение спрямо традиционните SATA дискове.
     <a href="pc_components.html" class="learn-more-btn2">Виж повече</a>
   </div>
@@ -102,8 +131,14 @@
   </div>
   </div>
       <div class="CPUConnector">
-         8-Pin CPU Connector
-      </div>
+         <div class="tooltip">
+  <div class="tooltip-trigger">8-Pin CPU Connector</div>
+  <div class="tooltip-text">
+    Този конектор осигурява допълнително захранване към процесора (CPU), особено важно при по-мощни и енергоемки модели.
+    Обикновено се намира в горната част на дънната платка.
+  </div>
+  </div>
+  </div>
 
 
   </main>
@@ -111,12 +146,14 @@
   <footer>
         <hr>
         <div class="footer2">
-        <p>©Всички права са запазени</p>
+        <p>Адрес:ж.к. Студентски град, ул. „Росарио“ 1 (ТУ-9блок)</p>
+        <p>©All authorities are reserved</p>
         </div>
+
         <p>Свържи се с нас на телефон +359 892 724 516 или:  </p>
         <div class="contacts2">
             <p> <a href="https://github.com/IT-8-TUES/8A-24-25-Team2">
-             <img src="C:\Programs_PK\HTML\It_project_Petar\pics\github_cat.png" 
+             <img src="pics\github_cat.png" 
          width="50rem" height="50rem"  alt="github" title="github"/>
          </a></p>
           <p> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=petar.t.kavrakov.2024@elsys-bg.org">
@@ -134,6 +171,25 @@
          <a href="privacypolicy.html"> Privacy Policy</a>
          </div>
   </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
  </body>
 
 </html>
