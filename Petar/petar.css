@@ -49,7 +49,23 @@ body {
 .pages a{
     display : flex;
     text-decoration:none;
+    position: relative;
     
+}
+
+.pages a::after{
+    content:"";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: white;
+    transition: width 0.2s;
+}
+
+.pages a:hover:after{
+    width: 100%;
 }
 
 .btn{
