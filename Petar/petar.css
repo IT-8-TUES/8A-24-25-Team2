@@ -1,4 +1,13 @@
 /* CSS файла на Петър Кавръков */
+@font-face {
+  font-family: 'Matrix';
+  src: url('./MatrixtypeDisplay-9MyE5.ttf') format('truetype');
+  
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 div {
     font-family: Roboto, Arial, sans-serif;
     font-weight: 100;
@@ -33,9 +42,9 @@ body {
 
 .title a {
     font-size: 40px;
-    
+    font-family: 'Matrix', monospace;
     text-decoration: none;
-    font-weight: 600;
+    
 }
 
 .pages {
@@ -133,13 +142,17 @@ body {
     filter: brightness(0.9);
 }
 /* край на CSS за JS-a на боби */
+footer{
+    padding: 2rem;
+}
+
 .footer {
-    position: absolute;
+    
   top: 88rem;
   right: 0;
   padding: 1rem;
   text-align: left;
-  font-family: Arial, sans-serif;
+  
   background-color: transparent; 
 }
 
@@ -150,7 +163,7 @@ body {
 .contacts {
     display : flex;
     background-color: #ffffff;
-    position: absolute;
+    
     top: 88.5rem;
     left: 1rem;
     gap: 1rem;
