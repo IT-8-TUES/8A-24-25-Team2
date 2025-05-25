@@ -1,0 +1,70 @@
+.laptop-card {
+    background: #000000;
+    border-radius: 1rem;
+    transition: transform 0.3s;
+    border: 0.1vh solid #ffffff;
+    box-shadow: 0 0 5px #ffffff;
+    flex: 0 0 25rem;
+}
+
+.laptop-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.info {
+    padding: 1.5rem;
+    color:#ffffff;
+}
+
+.info text {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.cena{
+    display: flex;
+    color: #ffffff;
+}
+.flexbox {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.buy{
+    display: inline-block;
+    padding: 0.1rem;         
+    font-size: 1.5rem;               
+    font-family: sans-serif;
+    color: #ffffff;
+    background-color: white;
+    border: 0.125rem solid black;
+    transition:background-color 0.15s, color 0.15s, border 0.15s;
+    border-radius:0.4rem; 
+    text-decoration: none;
+}
+.btn {
+      background-color: #ffffff;
+      font-size: 1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      border-radius: 0.08rem;
+      display: inline-block;
+      text-decoration: none;
+}
+
+.flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem;
+      padding: 1rem;
+      background-color: #ffffff;
+      font-size: 2rem;
+      border-radius: 1rem;
+    }
