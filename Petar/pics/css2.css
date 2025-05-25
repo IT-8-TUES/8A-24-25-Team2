@@ -4,6 +4,7 @@
     transition: transform 0.3s;
     border: 0.1vh solid #ffffff;
     box-shadow: 0 0 5px #ffffff;
+    flex: 0 0 25rem;
 }
 
 .laptop-card img {
@@ -30,9 +31,10 @@
     color: #ffffff;
 }
 .flexbox {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 .buy{
     display: inline-block;
