@@ -44,7 +44,7 @@ body {
     font-size: 40px;
     font-family: 'Matrix', monospace;
     text-decoration: none;
-    
+
 }
 
 .pages {
@@ -142,8 +142,58 @@ body {
     filter: brightness(0.9);
 }
 /* край на CSS за JS-a на боби */
-footer{
-    padding: 2rem;
+.foot{
+    display: flex;
+    background: black;
+    max-width: 100%;
+    height: 18rem;
+    padding: 3rem 5rem 2rem 5rem;
+    flex: 0 0 auto;
+    justify-content: space-between;
+}
+
+.foot p{
+    color: white;
+    
+}
+
+.logo{
+    font-family: 'Matrix', monospace;
+    color: white;
+    font-size: 5rem;
+}
+
+.phone{
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.other{
+    font-size: 1.4rem;
+}
+
+.other a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.other a::after{
+    content:"";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: white;
+    transition: width 0.2s;
+}
+
+.other a:hover:after{
+    width: 100%;
 }
 
 .footer {
