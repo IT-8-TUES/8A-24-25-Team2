@@ -1,5 +1,5 @@
 .laptop-card {
-    background: rgba(0, 0, 0, 0.7);
+    background: #000000;
     border-radius: 1rem;
     transition: transform 0.3s;
     border: 0.1vh solid #ffffff;
@@ -10,10 +10,12 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+    
 }
 
 .info {
     padding: 1.5rem;
+    color:#ffffff;
 }
 
 .info text {
@@ -31,15 +33,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 .buy{
     display: inline-block;
     padding: 0.1rem;         
     font-size: 1.5rem;               
     font-family: sans-serif;
-    color: black;
+    color: #ffffff;
     background-color: white;
     border: 0.125rem solid black;
     transition:background-color 0.15s, color 0.15s, border 0.15s;
@@ -56,10 +56,13 @@
       text-decoration: none;
 }
 
-
-
-
-
-
-
-    
+.flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem;
+      padding: 1rem;
+      background-color: #ffffff;
+      font-size: 2rem;
+      border-radius: 1rem;
+    }
