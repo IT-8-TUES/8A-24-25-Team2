@@ -88,3 +88,8 @@
       font-size: 2rem;
       border-radius: 1rem;
     }
+.mini-container {
+      display: flex;
+      margin: 3rem;
+      background-color: #ffffff;
+    }
