@@ -171,6 +171,28 @@ body {
     margin-top: 0;
 }
 
+.carousel_container {
+  display: flex;
+  position: relative;
+  width: 100%; /* or your desired width */
+
+  height: 90%;
+  overflow: hidden;
+  align-items: center;
+  gap:2rem;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s;
+  width: 100%;
+}
+
+.slides img {
+    width: 90%; /* same as container width */
+  flex-shrink: 0;
+}
+
 .spacer{
     margin-top: 3rem;
 }

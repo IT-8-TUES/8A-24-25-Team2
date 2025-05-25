@@ -87,7 +87,18 @@
       <!--<img src="https://preview.redd.it/advice-on-starting-gaming-pc-pre-built-business-v0-3ez6qcgjtljd1.jpeg?width=1080&crop=smart&auto=webp&s=268f8f541f4ea5f8f3914f201b67014094f20f19" alt="Pre build PC"  />-->
     </div>
   </div>
-   <div class="carousel-container">
+  <!--<div class="carousel_container">
+  <button class="prev">←</button>
+  <div class="slides">
+    <img src="https://p1-ofp.static.pub/medias/bWFzdGVyfHJvb3R8Nzg4OTN8aW1hZ2UvcG5nfGg5Ni9oYTcvMTA2NzMyMDYyNjM4MzgucG5nfDllOTUyNGM1OGYxNjkxNGU2ZTMxNWQxMTE1NDQ0MGZkNDU4ZWYwOWExZWZjMDJkMDRiZTIwYjc0OGE5NGUwMzA/lenovo-laptop-thinkpad-t490-hero-1126.png" />
+    <img src="pics\caroselpic (1).png" />
+    
+    
+  </div>
+  <button class="next">→</button>
+</div> -->
+  
+  <!--<div class="carousel-container">
   <div class="arrow" onclick="moveSlide(-1)">←</div>
   
    <div class="carousel" >
@@ -110,7 +121,7 @@
    </div>
 
 <div class="arrow" onclick="moveSlide(1)">→</div>
-</div>
+</div>-->
 
   </main>
   <div class="foot">
@@ -174,6 +185,20 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+let currentIndex = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = slides.children.length;
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+function moveSlide(dir) {
+  currentIndex = (currentIndex + dir + totalSlides) % totalSlides;
+  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+prevBtn.addEventListener('click', () => moveSlide(-1));
+nextBtn.addEventListener('click', () => moveSlide(1));
 </script>
 </body>
 </html> 
