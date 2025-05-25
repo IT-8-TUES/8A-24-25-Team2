@@ -553,4 +553,23 @@ body {
     line-height: 1.6;
 }
 
+    .carousel-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
 
+    .arrow {
+      font-size: 2rem;
+      background-color: #000000;
+      color: white;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s;
+    }
+
+    .arrow:hover {
+      background-color: #45a049;
+    }
